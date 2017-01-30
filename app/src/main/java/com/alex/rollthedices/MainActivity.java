@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private int dice2;
     private int dice3;
     private int soundId;
-    private SoundPool sp;
-    private MediaPlayer mPlayer;
+
 
     //ArrayList to hold all the three dice values
 
@@ -56,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 rollDice(view);
-                sp.play(soundId, 1, 1, 0, 0, 1);
-                mPlayer.start();
+
+
             }
         });
 
@@ -68,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         scoreText = (TextView) findViewById(R.id.scoreText) ;
 
         rand = new Random();
-        sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
-      
+
+
 
         //Create an array list to container for the dice
         dice = new ArrayList<>();
