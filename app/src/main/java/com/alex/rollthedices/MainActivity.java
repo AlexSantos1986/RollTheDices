@@ -69,10 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         rand = new Random();
         sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
-        soundId = sp.load(getBaseContext(), R.raw.Shake_Roll_Dice, 1);
-
-
-        mPlayer= MediaPlayer.create(getBaseContext(), R.raw.Shake_Roll_Dice);
+      
 
         //Create an array list to container for the dice
         dice = new ArrayList<>();
@@ -86,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         diceImageView.add(di1Image);
         diceImageView.add(di2Image);
         diceImageView.add(di3Image);
+
 
 
 
